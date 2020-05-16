@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+html {
+  min-height: 100%;
+  font-family: 'Nunito', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: linear-gradient(to bottom right, #3D4258, #6670A0, #9688B4);
+  line-height: 1.5;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: .5s ease;
+  z-index: -1;
+}
+
+.overlay.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.modal {
+  max-height: calc(100% - 100px);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 450px;
+  transform: translate(-50%, -50%);
+  color: #4a5666;
+  background: linear-gradient(to bottom right, white, #F8F8F8) !important;
+  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.modal h2 {
+  margin: 0;
+  font-weight: 400;
+  padding: 1rem;
+  border-bottom: 1px solid #DDE0E7;
+}
+
+.modal p {
+  padding: 1rem;
+}
+
+.modal.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+button {
+  display: inline-block;
+  background: rgba(10, 20, 30, .3);
+  border: 1px solid transparent;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 45px;
+  margin: .25rem 0;
+  vertical-align: middle;
+  line-height: 1;
+  overflow: visible;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 1px solid rgba(255, 255, 255, .8);
+  color: white;
+  background: rgba(255, 255, 255, .1);
+}
+
+button.close {
+  margin: 0 0 1rem;
+  background: #FC6468;
+}
+
+button.watch {
+  margin: 0 0 1rem;
+  background: #FC6468;
+}
+
+button.close:hover {
+  border: 1px solid #FC6468;
+  color: #FC6468;
+  background: transparent;
+}

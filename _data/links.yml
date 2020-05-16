@@ -1,5 +1,7 @@
 # links
-- url: "1.html"
-  description: Click here
-# - url: "#"
-#   description: Springfield Young Professionals
+# - url: "./jquery-accordion/index.html"
+#   description: Click here
+- url: "./jquery-modal/index.html"
+  description: click here
+- url: "./jquery-tabs/index.html"
+  description: welcome to my world
